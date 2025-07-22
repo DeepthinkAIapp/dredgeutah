@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepth Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <meta name="description" content="Deepthink Studio is a creative web design agency specializing in custom websites, e-commerce, and SEO optimization for businesses and brands." />
+  <meta name="keywords" content="web design, web development, e-commerce, SEO, branding, custom websites, digital agency, responsive design, Deepthink Studio" />
+  <meta name="author" content="Deepthink Studio" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Deepthink Studio | Creative Web Design Agency" />
+  <meta property="og:description" content="Creative web design agency specializing in custom websites, e-commerce, and SEO optimization for businesses and brands." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deepthinkstudio.com/" />
+  <meta property="og:image" content="https://deepthinkstudio.com/og-image.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Deepthink Studio | Creative Web Design Agency" />
+  <meta name="twitter:description" content="Creative web design agency specializing in custom websites, e-commerce, and SEO optimization for businesses and brands." />
+  <meta name="twitter:image" content="https://deepthinkstudio.com/og-image.jpg" />
+</head>
+<body>
+  <div id="contact-modal" class="contact-modal" style="display:none;">
+    <div class="contact-modal-content">
+      <button class="contact-modal-close" aria-label="Close">&times;</button>
+      <h2>Get In Touch</h2>
+      <form action="https://formspree.io/f/mjkognjj" method="POST" class="contact-form">
+        <div class="contact-form-row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email Address" required />
+        </div>
+        <input type="text" name="phone" placeholder="Your Phone Number" />
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <div class="contact-form-newsletter">
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          <label for="newsletter">To receive our weekly Newsletter/SMS and offers check here. You can unsubscribe at any time.</label>
+        </div>
+        <button type="submit" class="contact-form-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <header class="navbar glassy-header">
+    <div class="navbar-inner">
+      <div class="logo-group">
+        <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+          <span class="logo-icon">
+            <img src="images/logo.png" alt="Deepthink Studio Logo" class="logo-flip" style="height: 52px; width: 52px; object-fit: contain;" />
+          </span>
+          <span class="logo-text">DEEPTHINK<br><span class="logo-sub">STUDIO</span></span>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#services" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="#web-design">Web Design</a>
+            <a href="#ecommerce">E-Commerce</a>
+            <a href="#seo">SEO Optimization</a>
+          </div>
+        </div>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="start-project-btn">Start Project</button>
+        <button class="arrow-btn" aria-label="Next">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#C6FF1A"/>
+            <path d="M13 10l6 6-6 6" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="contact-btn" aria-label="Contact">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#222"/>
+            <path d="M10 16c2.5 2.5 6.5 2.5 9 0" stroke="#C6FF1A" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="16" cy="13" r="2" fill="#C6FF1A"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <div id="hero-sunflower-bg">
+      <!-- SVG line pattern overlay for hero background -->
+      <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.18">
+          <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
+          <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
+          <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
+          <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
+        </g>
+      </svg>
+      <svg class="sunflower-svg sunflower-center" width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#bfc3c6" stroke-width="2" opacity="0.45">
+          <path d="M450,100 Q700,450 450,800 Q200,450 450,100 Z"/>
+          <path d="M450,120 Q680,450 450,780 Q220,450 450,120 Z"/>
+          <path d="M450,140 Q660,450 450,760 Q240,450 450,140 Z"/>
+          <path d="M450,160 Q640,450 450,740 Q260,450 450,160 Z"/>
+          <path d="M450,180 Q620,450 450,720 Q280,450 450,180 Z"/>
+          <path d="M450,200 Q600,450 450,700 Q300,450 450,200 Z"/>
+          <ellipse cx="450" cy="450" rx="340" ry="340"/>
+          <ellipse cx="450" cy="450" rx="300" ry="300"/>
+          <ellipse cx="450" cy="450" rx="250" ry="250"/>
+          <ellipse cx="450" cy="450" rx="200" ry="200"/>
+        </g>
+      </svg>
+      <svg class="sunflower-svg sunflower-left" width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#bfc3c6" stroke-width="2" opacity="0.32">
+          <ellipse cx="450" cy="450" rx="340" ry="340"/>
+          <ellipse cx="450" cy="450" rx="300" ry="300"/>
+          <ellipse cx="450" cy="450" rx="250" ry="250"/>
+          <ellipse cx="450" cy="450" rx="200" ry="200"/>
+        </g>
+      </svg>
+      <svg class="sunflower-svg sunflower-right" width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#bfc3c6" stroke-width="2" opacity="0.32">
+          <ellipse cx="450" cy="450" rx="340" ry="340"/>
+          <ellipse cx="450" cy="450" rx="300" ry="300"/>
+          <ellipse cx="450" cy="450" rx="250" ry="250"/>
+          <ellipse cx="450" cy="450" rx="200" ry="200"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <h2 class="hero-top" style="color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.45);">How we</h2>
+      <h1 class="hero-main">Develop<br>Websites</h1>
+      <p class="hero-desc">At Deepthink Studio, We craft custom websites fit to your needs, ensuring a seamless online presence that reflects your brand identity. Our team of experienced developers utilize cutting edge technologies to deliver responsive, user friendly, and visually appealing websites. Whether you need a simple landing page, an e-commerce platform, or a complex web application, we've got you covered.</p>
+    </div>
+  </section>
+
+  <section class="help-section" style="background: linear-gradient(to top, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.18">
+        <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="help-grid" style="position: relative; z-index: 1;">
+      <div class="help-bubble">
+        <span>We can<br>help you With</span>
+      </div>
+      <div class="help-card help-card-green">
+        <div class="help-icon"> 
+          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#222"/><path d="M24 12l8 8-8 8-8-8z" fill="#C6FF1A"/></svg>
+        </div>
+        <div class="help-title">1. Custom Design</div>
+        <div class="help-desc">We'll create a website that matches your brand and goals.</div>
+      </div>
+      <div class="help-card">
+        <div class="help-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#C6FF1A"/><path d="M16 24h16M24 16v16" stroke="#222" stroke-width="3"/></svg>
+        </div>
+        <div class="help-title">2. Technical Expertise</div>
+        <div class="help-desc">Our team will handle all the technical details so you can focus on your business.</div>
+      </div>
+      <div class="help-card">
+        <div class="help-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#C6FF1A"/><circle cx="24" cy="24" r="8" fill="#222"/></svg>
+        </div>
+        <div class="help-title">3. Continuous Support</div>
+        <div class="help-desc">From start to finish, we'll be there to support you and your website.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages-section" style="background: linear-gradient(to bottom, #18191a 0%, #fff 100%); position: relative; overflow: hidden;">
+    <div class="advantages-grid" style="position: relative; z-index: 1;">
+      <div class="advantages-bubble">
+        <h2>Our advantages?</h2>
+        <p>With years of experience, we know how to build outstanding websites tailored to your needs. We take the time to understand your goals and deliver a site that fits you perfectly—on time and with exceptional quality. Our team is always available to support you, and our transparent pricing ensures you receive excellent value for your investment.</p>
+        <div class="advantages-img">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Web design example" />
+        </div>
+      </div>
+      <div class="advantages-stats">
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-desc"><em>Websites Expertly Crafted and Launched by Our Team</em></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-desc"><em>Years of Specialization in Web Design and Development</em></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">20+</div>
+          <div class="stat-desc"><em>Awards from leading Design Award Contests</em></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">800%</div>
+          <div class="stat-desc"><em>Surge of website traffic</em></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99%</div>
+          <div class="stat-desc"><em>Unanimous Client Approval of Our Web Design Services.</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-include-section" style="background: #fff; position: relative; overflow: hidden;">
+    <div class="projects-include-grid" style="position: relative; z-index: 1;">
+      <div class="projects-include-left">
+        <h2>All Our Projects Include:</h2>
+        <p>Every website development project at Pace On Studio comes with a suite of features designed to ensure your online success.</p>
+      </div>
+      <div class="projects-include-right">
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#00464d">&lt;/&gt;</text></svg></span>
+            <span class="feature-title">Custom Design*</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><circle cx="16" cy="16" r="10" fill="#00464d"/></svg></span>
+            <span class="feature-title">Responsive Development</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 24L24 8" stroke="#00464d" stroke-width="3"/></svg></span>
+            <span class="feature-title">User-Friendly Interface</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><circle cx="16" cy="16" r="6" fill="#00464d"/></svg></span>
+            <span class="feature-title">SEO Optimization</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><rect x="8" y="8" width="16" height="16" fill="#00464d"/></svg></span>
+            <span class="feature-title">Performance Optimization</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><circle cx="16" cy="16" r="4" fill="#00464d"/></svg></span>
+            <span class="feature-title">Content Management System (CMS)</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 16h16" stroke="#00464d" stroke-width="3"/></svg></span>
+            <span class="feature-title">E-commerce Integration</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><rect x="10" y="10" width="12" height="12" fill="#00464d"/></svg></span>
+            <span class="feature-title">Security Features</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><circle cx="16" cy="16" r="6" fill="#00464d"/></svg></span>
+            <span class="feature-title">Analytics and Reporting</span>
+          </div>
+        </div>
+        <div class="additional-services">
+          <div class="additional-title">Additional services:</div>
+          <div class="additional-grid">
+            <div class="additional-card">
+              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#C6FF1A">&#128722;</text></svg></span>
+              <span class="feature-title">E-commerce integration</span>
+            </div>
+            <div class="additional-card">
+              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#C6FF1A">&#128172;</text></svg></span>
+              <span class="feature-title">Multilingual support</span>
+            </div>
+            <div class="additional-card">
+              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#C6FF1A">&#127760;</text></svg></span>
+              <span class="feature-title">Hosting &amp; Domain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="portfolio" class="portfolio-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.18">
+        <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="portfolio-container" style="position: relative; z-index: 1;">
+      <h2 class="portfolio-title">Take a look at our impressive portfolio of<br>projects we’ve created up until now !</h2>
+      <div class="portfolio-subtitle">Showcasing our expertise in creating unique and impactful designs matched exclusively to each client’s vision and brand identity.</div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+1" alt="Project 1" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+2" alt="Project 2" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+3" alt="Project 3" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+4" alt="Project 4" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+5" alt="Project 5" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+6" alt="Project 6" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+7" alt="Project 7" /></div>
+        <div class="portfolio-item"><img src="https://placehold.co/320x180/222/fff?text=Project+8" alt="Project 8" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.18">
+        <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="expertise-container" style="position: relative; z-index: 1;">
+      <div class="expertise-title">We are experts in</div>
+      <div class="expertise-scroll-outer">
+        <div class="expertise-scroll-inner">
+          <div class="expertise-logos">
+            <span class="expertise-logo" title="PHP">
+              <img src="images/php.png" alt="PHP" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="JavaScript">
+              <img src="images/js.png" alt="JavaScript" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Web">
+              <img src="images/web.png" alt="Web" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Mailchimp">
+              <img src="images/mailchimp.png" alt="Mailchimp" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Shopify">
+              <img src="images/shopify.png" alt="Shopify" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="React">
+              <img src="images/library.png" alt="React" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Wix">
+              <img src="images/wix.png" alt="Wix" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="WordPress">
+              <img src="images/wordpress.png" alt="WordPress" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Support">
+              <img src="images/support.png" alt="Support" width="60" height="60" />
+            </span>
+          </div>
+          <!-- duplicate for seamless scroll -->
+          <div class="expertise-logos">
+            <span class="expertise-logo" title="JavaScript">
+              <img src="images/js.png" alt="JavaScript" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Web">
+              <img src="images/web.png" alt="Web" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Mailchimp">
+              <img src="images/mailchimp.png" alt="Mailchimp" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Shopify">
+              <img src="images/shopify.png" alt="Shopify" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="React">
+              <img src="images/library.png" alt="React" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Wix">
+              <img src="images/wix.png" alt="Wix" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="WordPress">
+              <img src="images/wordpress.png" alt="WordPress" width="60" height="60" />
+            </span>
+            <span class="expertise-logo" title="Support">
+              <img src="images/support.png" alt="Support" width="60" height="60" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.18">
+        <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="packages-header" style="position: relative; z-index: 1;">
+      <h2>Choose<br>your package</h2>
+      <div class="packages-subtitle">Our plans are clear and open, no shocks or caps. Help is always here when you want it.</div>
+    </div>
+    <div class="packages-grid">
+      <!-- Row 1 -->
+      <div class="package-card">
+        <div class="package-title">Startup</div>
+        <div class="package-sub">Launch with impact: Essential web solution</div>
+        <div class="package-price">$ <span>245</span></div>
+        <div class="package-features package-features-green">
+          <ul>
+            <li>3 Page Website</li>
+            <li>Custom Layout Design</li>
+            <li>Contact/Query Form</li>
+            <li>3 Banner Designs</li>
+            <li>5 Stock Photos</li>
+            <li>FREE Favicon Design</li>
+            <li>FREE Google Friendly Sitemap</li>
+            <li>Unlimited Revisions</li>
+            <li>Complete W3C Certified HTML</li>
+          </ul>
+        </div>
+        <button class="package-btn">Start Project <span>&#8594;</span></button>
+      </div>
+      <div class="package-card">
+        <div class="package-title">Professional</div>
+        <div class="package-sub">Growth-focused web solutions for expanding businesses</div>
+        <div class="package-price">$ <span>695</span></div>
+        <div class="package-features package-features-teal">
+          <ul>
+            <li>Up to 5 Unique Pages Website</li>
+            <li>CMS /Admin Panel Integration</li>
+            <li>5+ Stock Photos & Banner Designs</li>
+            <li>FREE Social Media Integration</li>
+            <li>FREE Favicon Design</li>
+            <li>FREE Google Friendly Sitemap</li>
+            <li>Unlimited Revisions</li>
+            <li>Cross Browser Compatible</li>
+            <li>Complete W3C Certified HTML</li>
+          </ul>
+        </div>
+        <button class="package-btn">Start Project <span>&#8594;</span></button>
+      </div>
+      <div class="package-card">
+        <div class="package-title">Elite</div>
+        <div class="package-sub">Launch with impact: Essential web solution</div>
+        <div class="package-price">$ <span>995</span></div>
+        <div class="package-features package-features-blue">
+          <ul>
+            <li>Up to 10 Unique Pages Website</li>
+            <li>Custom Made, Interactive & Dynamic Design</li>
+            <li>Customized WordPress or PHP Development</li>
+            <li>Interactive Sliding Banners</li>
+            <li>Up to 10 Custom Made Banner Designs</li>
+            <li>10 Stock Images</li>
+            <li>Unlimited Revisions</li>
+          </ul>
+        </div>
+        <button class="package-btn">Start Project <span>&#8594;</span></button>
+      </div>
+      <!-- Row 2 -->
+      <div class="package-card">
+        <div class="package-title">Silver</div>
+        <div class="package-sub">Launch with impact: Essential web solution</div>
+        <div class="package-price">$ <span>1595</span></div>
+        <div class="package-features package-features-gold">
+          <ul>
+            <li>Up to 15 Unique Pages Website</li>
+            <li>Custom Made, Interactive, Dynamic & High-End Design</li>
+            <li>Customized WordPress or PHP Development</li>
+            <li>Fully Mobile Responsive</li>
+            <li>Interactive Sliding Banners</li>
+            <li>Up to 15 Custom Made Banner Designs</li>
+            <li>15 Stock Images</li>
+          </ul>
+        </div>
+        <button class="package-btn">Start Project <span>&#8594;</span></button>
+      </div>
+      <div class="package-card">
+        <div class="package-title">Business</div>
+        <div class="package-sub">Launch with impact: Essential web solution</div>
+        <div class="package-price">$ <span>2495</span></div>
+        <div class="package-features package-features-orange">
+          <ul>
+            <li>25 Pages Website</li>
+            <li>Custom Made, Interactive, Dynamic & High-End Design</li>
+            <li>Customized WordPress or PHP Development</li>
+            <li>Fully Mobile Responsive</li>
+            <li>Interactive Sliding Banners</li>
+            <li>Up to 15 Custom Made Banner Designs</li>
+            <li>15 Stock Images</li>
+          </ul>
+        </div>
+        <button class="package-btn">Start Project <span>&#8594;</span></button>
+      </div>
+      <div class="package-card">
+        <div class="package-title">Platinum</div>
+        <div class="package-sub">Launch with impact: Essential web solution</div>
+        <div class="package-price">$ <span>4495</span></div>
+        <div class="package-features package-features-red">
+          <ul>
+            <li>Unlimited Pages Website</li>
+            <li>Custom Made, Interactive, Dynamic & High-End Design</li>
+            <li>Customized WordPress or PHP Development</li>
+            <li>Fully Mobile Responsive</li>
+            <li>Interactive Sliding Banners</li>
+            <li>Up to 15 Custom Made Banner Designs</li>
+            <li>15 Stock Images</li>
+          </ul>
+        </div>
+        <button class="package-btn">Start Project <span>&#8594;</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-headstart-section" style="background: #18191a; position: relative; overflow: hidden;">
+    <div class="cta-headstart-bg" style="position: relative; z-index: 1;"></div>
+    <div class="cta-headstart-content">
+      <div class="cta-headstart-left">
+        <h2>Get a Headstart !</h2>
+        <p>Ready to elevate your online presence? Contact Deepthink Studio today to start building a custom website that drives results. Let’s create something amazing together!</p>
+        <div class="cta-headstart-actions">
+          <button class="cta-headstart-chat">Live chat</button>
+          <span class="cta-headstart-call">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="11" fill="#18191a"/><path d="M7 9c.5 2 2.5 4 4.5 4.5l1.5-1.5c.2-.2.5-.2.7 0l2 1.2c.2.1.3.4.2.6-.4 1.1-1.5 2-2.7 2C9.5 16 6 12.5 6 8.5c0-1.2.9-2.3 2-2.7.2-.1.5 0 .6.2l1.2 2c.1.2.1.5 0 .7L7 9z" fill="#C6FF1A"/></svg>
+            <span class="cta-headstart-calltext">
+              <span>Call Now</span><br/>
+              <span class="cta-headstart-phone">(385) 355-1138</span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="cta-headstart-right">
+        <img class="cta-headstart-person" src="images\jump.png" alt="Person" />
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.18">
+        <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
+        <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="quote-bg" style="position: relative; z-index: 1;">
+      <div class="quote-inner">
+        <div class="quote-believe">We believe that</div>
+        <div class="quote-text">Great design is clear and simple, making ideas easy to understand at a glance.</div>
+      </div>
+    </div>
+    <div class="quote-cta">
+      <div class="quote-cta-inner">
+        <div class="quote-cta-title">Got a project to discuss?</div>
+        <button class="quote-cta-btn">Start Project <span>&#8594;</span></button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-new">
+    <div class="footer-main">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Deepthink Studio Logo" class="logo-flip" style="height: 60px; width: 80px; object-fit: contain;" />
+          <span class="footer-logo-text"><span>DEEPTHINK</span><br><span class="footer-logo-sub">STUDIO</span></span>
+        </div>
+        <div class="footer-desc">
+Deepthink Studio was founded on the principle that a strong digital presence can elevate brands worldwide. We empower businesses to grow and thrive online through innovative web design and strategic digital solutions.
+</div>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-links-title">Quick Links</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-services">
+        <div class="footer-links-title">Our Services</div>
+        <ul>
+          <li><a href="packages.html#logo-packages">Logo Design</a></li>
+          <li><a href="packages.html#website-packages">Website Design</a></li>
+          <li><a href="packages.html#ecommerce-packages">E-commerce</a></li>
+          <li><a href="packages.html#webportal-packages">Web Portal</a></li>
+          <li><a href="packages.html#mobile-packages">Mobile Application</a></li>
+          <li><a href="packages.html#digital-packages">Digital Marketing</a></li>
+          <li><a href="packages.html#seo-packages">SEO</a></li>
+          <li><a href="packages.html#animation-packages">Video Animation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <div class="footer-links-title">Contact Us</div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/JeremyLaFaver" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" fill="#222"><circle cx="9" cy="9" r="9" fill="#fff"/><text x="9" y="14" text-anchor="middle" font-size="12" font-family="Arial" fill="#222">f</text></svg></a>
+          <a href="#" aria-label="Pinterest"><svg width="18" height="18" fill="#222"><circle cx="9" cy="9" r="9" fill="#fff"/><text x="9" y="14" text-anchor="middle" font-size="12" font-family="Arial" fill="#222">p</text></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="#222"><circle cx="9" cy="9" r="9" fill="#fff"/><text x="9" y="14" text-anchor="middle" font-size="12" font-family="Arial" fill="#222">in</text></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="#222"><circle cx="9" cy="9" r="9" fill="#fff"/><text x="9" y="14" text-anchor="middle" font-size="12" font-family="Arial" fill="#222">ig</text></svg></a>
+        </div>
+        <div class="footer-contact-list">
+          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">&#9742;</text></svg> (385) 355-1138</div>
+          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">@</text></svg> <a href="mailto:info@deepthinkstudio.com" style="color:inherit;text-decoration:none;">info@deepthinkstudio.com</a></div>
+          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">&#8962;</text></svg> 620 S 7th St PMB 1943, Las Vegas, Nevada 89101, United States</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2025 Deepthink Studio | All rights reserved.</div>
+      <div class="footer-legal">All content, including logos, images, designs, and text, is the intellectual property of Deepthink Studio unless otherwise stated. Any third-party trademarks, logos, or brand names displayed on this website are the property of their respective owners and are used strictly for illustrative purposes. Portfolio examples and case studies shown on this website are based on real work completed by our team; however, some names, visuals, or details may be modified to honor client confidentiality agreements under our Non-Disclosure Agreements (NDAs). These samples are intended to demonstrate the quality and style of our work, and do not claim affiliation or endorsement unless explicitly stated.</div>
+      <div class="footer-dba">Deepthink Studio is DBA of <b>DEEPTHINK ENTERPRISES LLC</b></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/687eb3c6790c14191a1ba3a7/1j0nesfm2';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <canvas id="tracer-canvas" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9999;"></canvas>
+</body>
+</html>
