@@ -1,16 +1,25 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "about.html", "use": "@vercel/static" },
-    { "src": "packages.html", "use": "@vercel/static" },
-    { "src": "contact.html", "use": "@vercel/static" },
-    { "src": "portfolio.html", "use": "@vercel/static" },
-    { "src": "styles.css", "use": "@vercel/static" },
-    { "src": "script.js", "use": "@vercel/static" },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.css", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/static" },
+    { "src": "*.xml", "use": "@vercel/static" },
     { "src": "images/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+    {
+      "src": "/sitemap.xml",
+      "headers": {
+        "Content-Type": "application/xml"
+      }
+    },
+    { 
+      "src": "/(.*)", 
+      "dest": "/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=3600"
+      }
+    }
   ]
-} 
+}
