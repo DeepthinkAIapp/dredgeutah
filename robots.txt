@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /search/
+Disallow: /?s=
+
+Sitemap: https://deepthinkstudio.com/sitemap.xml
+
+# Crawl-delay: 10  # Uncomment if you experience heavy bot traffic
+
+# Specific bot instructions
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Allow media bots
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /images/
