@@ -1,16 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://deepthinkstudio.com/sitemap.xml
-
-# Disallow admin areas (if any)
-Disallow: /admin/
-Disallow: /private/
-
-# Allow all other content
-Allow: /images/
-Allow: /blog/
-Allow: /*.html
-Allow: /*.css
-Allow: /*.js
