@@ -12,20 +12,5 @@
     { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
     { "source": "/termsofuse", "destination": "/termsofuse.html" },
     { "source": "/refundpolicy", "destination": "/refundpolicy.html" }
-  ],
-  "routes": [
-    {
-      "src": "/sitemap.xml",
-      "headers": {
-        "Content-Type": "application/xml"
-      }
-    },
-    { 
-      "src": "/(.*)", 
-      "dest": "/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=3600"
-      }
-    }
   ]
 }
