@@ -11,6 +11,7 @@
   "rewrites": [
     { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
     { "source": "/termsofuse", "destination": "/termsofuse.html" },
-    { "source": "/refundpolicy", "destination": "/refundpolicy.html" }
+    { "source": "/refundpolicy", "destination": "/refundpolicy.html" },
+    { "source": "/blog", "destination": "/blog/index.html" }
   ]
 }
