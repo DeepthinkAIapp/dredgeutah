@@ -33,6 +33,136 @@
   <meta name="twitter:image" content="https://deepthinkstudio.com/images/logo.png" />
   <!-- Canonical URL -->
   <link rel="canonical" href="https://deepthinkstudio.com/blog/" />
+  <style>
+    /* Mobile-first responsive styles */
+    @media (max-width: 768px) {
+      /* Header adjustments */
+      .navbar-inner {
+        padding: 0 1rem;
+      }
+      .nav-links {
+        display: none; /* Hide desktop nav on mobile */
+      }
+      .header-actions {
+        gap: 0.5rem;
+      }
+      
+      /* Blog header */
+      h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.1 !important;
+      }
+      
+      /* Main content grid */
+      .blog-content-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+      
+      /* Featured post */
+      .featured-blog-post {
+        margin-bottom: 2rem !important;
+      }
+      .featured-blog-post h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.2 !important;
+      }
+      
+      /* Blog cards grid */
+      .blog-cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+      
+      /* Blog cards */
+      .blog-card h3 {
+        font-size: 1.1rem !important;
+        line-height: 1.3 !important;
+      }
+      
+      /* Sidebar */
+      .blog-sidebar {
+        order: -1 !important;
+        margin-bottom: 2rem !important;
+      }
+      
+      /* Newsletter form */
+      .newsletter-form {
+        flex-direction: column !important;
+        gap: 1rem !important;
+      }
+      
+      /* Search bar */
+      .blog-search-container {
+        max-width: 100% !important;
+      }
+      .blog-search-container input {
+        font-size: 1rem !important;
+        padding: 1rem !important;
+      }
+      .blog-search-container button {
+        padding: 1rem 1.5rem !important;
+        font-size: 1rem !important;
+      }
+      
+      /* Breadcrumb */
+      .breadcrumb-nav {
+        padding: 0.8rem 0 !important;
+      }
+      .breadcrumb-nav ol {
+        font-size: 0.8rem !important;
+        flex-wrap: wrap !important;
+      }
+      
+      /* Footer adjustments */
+      .footer-main {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 0 1rem 2rem 1rem !important;
+      }
+      
+      /* Container padding */
+      .blog-container {
+        padding: 0 1rem !important;
+      }
+      
+      /* Recent posts in sidebar */
+      .recent-posts article {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+      }
+      .recent-posts img {
+        width: 100% !important;
+        height: 120px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      /* Extra small screens */
+      h1 {
+        font-size: 2rem !important;
+      }
+      
+      .featured-blog-post h2 {
+        font-size: 1.3rem !important;
+      }
+      
+      .blog-card h3 {
+        font-size: 1rem !important;
+      }
+      
+      /* Reduce padding */
+      .blog-main-content {
+        padding: 40px 0 !important;
+      }
+      
+      /* Stack buttons */
+      .cta-headstart-actions {
+        flex-direction: column !important;
+        gap: 1rem !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="contact-modal" class="contact-modal" style="display:none;">

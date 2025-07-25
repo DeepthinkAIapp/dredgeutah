@@ -38,6 +38,77 @@
   <meta name="twitter:image" content="https://deepthinkstudio.com/images/{{FEATURED_IMAGE|default('Black and White Modern Corporate Business Consulting & Sales LinkedIn Banner.png')}}" />
   <!-- Canonical URL -->
   <link rel="canonical" href="https://deepthinkstudio.com/{{FILENAME}}" />
+  <style>
+    /* Mobile-first responsive styles */
+    @media (max-width: 768px) {
+      /* Header adjustments */
+      .navbar-inner {
+        padding: 0 1rem;
+      }
+      .nav-links {
+        display: none; /* Hide desktop nav on mobile */
+      }
+      .header-actions {
+        gap: 0.5rem;
+      }
+      /* Main content */
+      main {
+        padding: 30px 0 !important;
+      }
+      .blog-post-container {
+        padding: 0 1rem !important;
+      }
+      article header h1 {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+      }
+      article header p {
+        font-size: 1rem !important;
+      }
+      article header img {
+        height: 200px !important;
+        border-radius: 8px !important;
+      }
+      /* Social sharing */
+      .social-sharing {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        padding: 1rem !important;
+      }
+      /* Author bio */
+      .author-bio {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        padding: 1rem !important;
+      }
+      .author-bio img {
+        width: 48px !important;
+        height: 48px !important;
+      }
+      /* Related posts */
+      .related-articles {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+      /* Footer adjustments */
+      .footer-main {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 0 1rem 2rem 1rem !important;
+      }
+    }
+    @media (max-width: 480px) {
+      article header h1 {
+        font-size: 1.3rem !important;
+      }
+      main {
+        padding: 20px 0 !important;
+      }
+      .footer-main {
+        padding: 0 0.5rem 1rem 0.5rem !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="contact-modal" class="contact-modal" style="display:none;">
