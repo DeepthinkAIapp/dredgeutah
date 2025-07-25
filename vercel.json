@@ -8,6 +8,11 @@
     { "src": "*.txt", "use": "@vercel/static" },
     { "src": "images/**", "use": "@vercel/static" }
   ],
+  "rewrites": [
+    { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
+    { "source": "/termsofuse", "destination": "/termsofuse.html" },
+    { "source": "/refundpolicy", "destination": "/refundpolicy.html" }
+  ],
   "routes": [
     {
       "src": "/sitemap.xml",
