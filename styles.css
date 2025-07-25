@@ -1925,20 +1925,22 @@ body {
   border-radius: 16px 16px 16px 0 !important;
 }
 
-/* Rest of your existing CSS remains unchanged */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-/* Paceon Studio Inspired Theme */
-:root {
-  --primary-bg: #484f52;
-  --header-glass: rgba(120, 130, 135, 0.35);
-  --header-border: rgba(200, 200, 200, 0.08);
-  --header-radius: 40px;
-  --accent-green: #C6FF1A;
-  --dark: #222;
-  --white: #fff;
-  --gray-text: #bfc3c6;
-  --button-dark: #222;
-  --button-green: #C6FF1A;
+/* Make 'Read More' links on blog cards and featured posts more readable */
+.blog-card a,
+.featured-blog-post a {
+  color: #222 !important;
+  background: #C6FF1A;
+  font-weight: 700;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 8px rgba(198,255,26,0.08);
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
 }
-
-[... REST OF YOUR EXISTING CSS ...]
+.blog-card a:hover,
+.featured-blog-post a:hover {
+  background: #b2e600;
+  color: #18191a !important;
+  text-decoration: underline;
+}
