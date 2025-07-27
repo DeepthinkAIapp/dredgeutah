@@ -135,9 +135,16 @@ class SimpleBlogAutomation {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${postData.title} | Deepthink Studio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+      <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    
+    <!-- Comprehensive Favicon Support -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-32x32.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#C6FF1A" />
   <meta name="description" content="${postData.description || 'A comprehensive guide on ' + postData.title.toLowerCase()}" />
   <meta name="keywords" content="${postData.keywords || 'web design, development, tips'}" />
   <meta name="author" content="Deepthink Studio" />
