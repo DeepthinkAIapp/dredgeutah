@@ -62,14 +62,15 @@ navLinkElements.forEach(link => {
   });
 });
 
-// Gradient neon-green-to-blue tracer effect with tapered thickness
+// Enhanced mouse tracer effect with aquatic theme colors
 (function() {
-  const SEGMENTS = 16;
-  const SIZE_HEAD = 32; // px, thickest at head
-  const SIZE_TAIL = 8;  // px, thinnest at tail
-  const HEAD_COLOR = [198, 255, 26]; // neon green
-  const TAIL_COLOR = [58, 125, 255]; // blue
+  const SEGMENTS = 20;
+  const SIZE_HEAD = 28; // px, thickest at head
+  const SIZE_TAIL = 6;  // px, thinnest at tail
+  const HEAD_COLOR = [72, 202, 228]; // #48cae4 - aquatic blue
+  const TAIL_COLOR = [144, 224, 239]; // #90e0ef - lighter blue
   const trail = [];
+  
   for (let i = 0; i < SEGMENTS; i++) {
     const seg = document.createElement('div');
     seg.className = 'mouse-tracer-segment';
@@ -93,21 +94,32 @@ navLinkElements.forEach(link => {
     let prevX = mouseX, prevY = mouseY;
     for (let i = 0; i < SEGMENTS; i++) {
       const seg = trail[i];
-      seg.x += (prevX - seg.x) * 0.45;
-      seg.y += (prevY - seg.y) * 0.45;
+      seg.x += (prevX - seg.x) * 0.4;
+      seg.y += (prevY - seg.y) * 0.4;
+      
       // Tapered size
       const t = i / (SEGMENTS - 1);
       const size = lerp(SIZE_HEAD, SIZE_TAIL, t);
       seg.el.style.width = `${size}px`;
       seg.el.style.height = `${size}px`;
       seg.el.style.transform = `translate3d(${seg.x - size/2}px, ${seg.y - size/2}px, 0)`;
-      // Color gradient
+      
+      // Aquatic color gradient
       const r = Math.round(lerp(HEAD_COLOR[0], TAIL_COLOR[0], t));
       const g = Math.round(lerp(HEAD_COLOR[1], TAIL_COLOR[1], t));
       const b = Math.round(lerp(HEAD_COLOR[2], TAIL_COLOR[2], t));
-      const opacity = lerp(0.95, 0.15, t);
+      const opacity = lerp(0.9, 0.1, t);
       seg.el.style.background = `rgba(${r},${g},${b},${opacity})`;
-      seg.el.style.boxShadow = i === 0 ? `0 0 32px 12px rgba(198,255,26,0.5)` : 'none';
+      
+      // Enhanced glow effect for head
+      if (i === 0) {
+        seg.el.style.boxShadow = `0 0 24px 8px rgba(72,202,228,0.6)`;
+      } else if (i < 3) {
+        seg.el.style.boxShadow = `0 0 16px 4px rgba(72,202,228,0.3)`;
+      } else {
+        seg.el.style.boxShadow = 'none';
+      }
+      
       prevX = seg.x;
       prevY = seg.y;
     }
@@ -187,91 +199,7 @@ navLinkElements.forEach(link => {
   });
 })();
 
-// Mouse tracer effect
-(function() {
-  const canvas = document.getElementById('tracer-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let width = window.innerWidth;
-  let height = window.innerHeight;
-  canvas.width = width;
-  canvas.height = height;
 
-  let points = [];
-  const maxPoints = 40; // Length of the tracer
-
-  window.addEventListener('resize', () => {
-    width = window.innerWidth;
-    height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
-  });
-
-  function lerp(a, b, t) {
-    return a + (b - a) * t;
-  }
-
-  function addInterpolatedPoints(last, curr) {
-    const dist = Math.hypot(curr.x - last.x, curr.y - last.y);
-    const step = 2; // px between interpolated points (smaller = denser, always solid)
-    if (dist > step) {
-      const steps = Math.floor(dist / step);
-      for (let i = 1; i < steps; i++) {
-        const t = i / steps;
-        points.push({
-          x: lerp(last.x, curr.x, t),
-          y: lerp(last.y, curr.y, t)
-        });
-      }
-    }
-  }
-
-  let lastPoint = null;
-  document.addEventListener('pointermove', (e) => {
-    const curr = { x: e.clientX, y: e.clientY };
-    if (lastPoint) {
-      addInterpolatedPoints(lastPoint, curr);
-    }
-    points.push(curr);
-    lastPoint = curr;
-    if (points.length > maxPoints) points = points.slice(points.length - maxPoints);
-  });
-
-  function drawTracer() {
-    ctx.clearRect(0, 0, width, height);
-
-    if (points.length > 1) {
-      ctx.save();
-      ctx.lineCap = 'round';
-      ctx.lineJoin = 'round';
-      ctx.shadowColor = 'lime';
-      ctx.shadowBlur = 20; // Glow effect
-
-      ctx.beginPath();
-      ctx.moveTo(points[0].x, points[0].y);
-      for (let i = 1; i < points.length; i++) {
-        ctx.lineTo(points[i].x, points[i].y);
-      }
-
-      // Gradient for tail fade
-      const grad = ctx.createLinearGradient(
-        points[0].x, points[0].y,
-        points[points.length - 1].x, points[points.length - 1].y
-      );
-      grad.addColorStop(0, 'rgba(0,255,0,0.2)');
-      grad.addColorStop(1, 'rgba(200,255,100,1)');
-
-      ctx.strokeStyle = grad;
-      ctx.lineWidth = 18;
-      ctx.stroke();
-      ctx.restore();
-    }
-
-    requestAnimationFrame(drawTracer);
-  }
-
-  drawTracer();
-})();
 
 
 

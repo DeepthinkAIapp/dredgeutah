@@ -1,0 +1,44 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48cae4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#90e0ef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ade8f4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dredgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#023e8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#03045e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48cae4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#90e0ef;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#logoGradient)"/>
+  
+  <!-- Water waves at bottom -->
+  <path d="M30 150 Q40 140 50 150 Q60 160 70 150 Q80 140 90 150 Q100 160 110 150 Q120 140 130 150 Q140 160 150 150 Q160 140 170 150" stroke="url(#waterGradient)" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M40 170 Q50 160 60 170 Q70 180 80 170 Q90 160 100 170 Q110 180 120 170 Q130 160 140 170 Q150 180 160 170" stroke="url(#waterGradient)" stroke-width="6" fill="none" opacity="0.5"/>
+  
+  <!-- Dredge bucket -->
+  <path d="M75 70 L125 70 L130 80 L130 110 L120 120 L80 120 L70 110 L70 80 Z" fill="url(#dredgeGradient)"/>
+  
+  <!-- Dredge bucket teeth -->
+  <path d="M70 80 L70 85 L75 90 L80 90 L85 85 L90 85 L95 90 L100 90 L105 85 L110 85 L115 90 L120 90 L125 85 L130 85 L130 80" stroke="#48cae4" stroke-width="4" fill="none"/>
+  
+  <!-- Dredge arm -->
+  <rect x="95" y="45" width="10" height="25" fill="url(#dredgeGradient)" rx="2"/>
+  
+  <!-- Dredge cable -->
+  <path d="M100 45 Q100 30 100 25" stroke="#48cae4" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Sediment particles -->
+  <circle cx="85" cy="115" r="4" fill="#48cae4" opacity="0.6"/>
+  <circle cx="100" cy="118" r="3" fill="#90e0ef" opacity="0.7"/>
+  <circle cx="115" cy="115" r="5" fill="#48cae4" opacity="0.5"/>
+  
+  <!-- Company name text -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#023e8a">DREDGE UTAH</text>
+</svg>

@@ -730,13 +730,17 @@ textarea:focus {
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  background: none;
-  box-shadow: none;
-  mix-blend-mode: lighten;
-  transition: background 0.2s, box-shadow 0.2s;
-  will-change: transform;
+  background: rgba(72, 202, 228, 0.8);
+  box-shadow: 0 0 16px 4px rgba(72, 202, 228, 0.4);
+  mix-blend-mode: screen;
+  transition: all 0.1s ease-out;
+  will-change: transform, background, box-shadow;
+  backdrop-filter: blur(1px);
 }
-.mouse-tracer-segment:nth-child(n) { opacity: 0.85; }
+.mouse-tracer-segment:nth-child(n) { 
+  opacity: 1; 
+  filter: blur(0.5px);
+}
 
 .help-section {
   background: #fafaf8;
