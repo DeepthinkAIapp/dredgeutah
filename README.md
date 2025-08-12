@@ -1,22 +1,41 @@
-# Deepthink Studio Website
+# DredgeUtah - Professional Pond & Lake Dredging Services
 
-This is the source code for the Deepthink Studio website.
+## About DredgeUtah
 
-## Local Development
+DredgeUtah is Utah's premier pond and lake dredging company, specializing in professional water restoration services. We serve Salt Lake City, Provo, Ogden, and surrounding areas with comprehensive dredging solutions.
 
-Open `index.html` in your browser, or use a local server (e.g. `npx serve .` or VSCode Live Server) to preview the site.
+## Our Services
 
-## Deployment (Vercel)
+- **Pond Dredging**: Complete pond restoration and sediment removal
+- **Lake Dredging**: Large-scale lake maintenance and cleaning
+- **Sediment Removal**: Professional sediment extraction and disposal
+- **Aquatic Weed Control**: Mechanical and chemical weed management
+- **Water Restoration**: Water quality improvement and ecosystem restoration
+- **Emergency Response**: 24/7 emergency dredging services
+- **Maintenance Services**: Ongoing water feature maintenance
 
-1. Push all files to your GitHub repository: https://github.com/DeepthinkAIapp/deepthinkstudio.git
-2. Connect your repository to Vercel (https://vercel.com/)
-3. Vercel will automatically detect the static site and deploy it.
-4. All HTML, CSS, JS, and images are served from the root directory.
+## Contact Information
 
-### Project Structure
-- `index.html`, `about.html`, `packages.html`, `contact.html`: Main pages
-- `styles.css`, `script.js`: Global styles and scripts
-- `images/`: All image assets
-- `vercel.json`: Vercel configuration
+- **Phone**: (385) 355-1138
+- **Email**: info@dredgeutah.com
+- **Service Area**: All of Utah - Salt Lake City, Provo, Ogden, and surrounding areas
 
-No build step is required. All files are static. 
+## Website Features
+
+- Professional dredging service information
+- Expert blog with dredging insights and tips
+- Free quote request system
+- Comprehensive service portfolio
+- Local SEO optimization for Utah market
+
+## Technology Stack
+
+- HTML5, CSS3, JavaScript
+- Responsive design for all devices
+- SEO optimized for local search
+- Formspree integration for contact forms
+- Vercel deployment ready
+
+---
+
+© 2025 DredgeUtah | DBA of DREDGE UTAH LLC 

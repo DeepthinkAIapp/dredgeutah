@@ -1,34 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-/* Paceon Studio Inspired Theme */
+/* DredgeUtah Aquatic Theme */
 :root {
-  --primary-bg: #484f52;
-  --header-glass: rgba(120, 130, 135, 0.35);
-  --header-border: rgba(200, 200, 200, 0.08);
+  --primary-bg: #0f4c75;
+  --header-glass: rgba(15, 76, 117, 0.35);
+  --header-border: rgba(255, 255, 255, 0.1);
   --header-radius: 40px;
-  --accent-green: #C6FF1A;
-  --dark: #222;
+  --accent-green: #48cae4;
+  --accent-teal: #90e0ef;
+  --accent-blue: #ade8f4;
+  --water-light: #caf0f8;
+  --dark: #023e8a;
+  --dark-blue: #03045e;
   --white: #fff;
-  --gray-text: #bfc3c6;
-  --button-dark: #222;
-  --button-green: #C6FF1A;
+  --gray-text: #e0f2fe;
+  --button-dark: #023e8a;
+  --button-green: #48cae4;
+  --gradient-primary: linear-gradient(135deg, #0f4c75 0%, #023e8a 50%, #03045e 100%);
+  --gradient-water: linear-gradient(135deg, #48cae4 0%, #90e0ef 50%, #ade8f4 100%);
+  --gradient-surface: linear-gradient(135deg, #caf0f8 0%, #f0f9ff 100%);
 }
 body {
-  background: var(--primary-bg);
+  background: var(--gradient-primary);
   color: var(--white);
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Accessibility improvements for better readability */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure sufficient color contrast for all text */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Focus states for better accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #48cae4;
+  outline-offset: 2px;
+}
+
+/* Aquatic Theme Enhancements */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="water" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 10 Q5 5 10 10 T20 10" stroke="rgba(255,255,255,0.1)" fill="none" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23water)"/></svg>');
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.help-card, .package-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(72, 202, 228, 0.2);
+}
+
+.help-card:hover, .package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(72, 202, 228, 0.3);
+}
+
+.start-project-btn, .package-btn {
+  background: var(--gradient-water) !important;
+  border: none !important;
+  color: var(--dark-blue) !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease !important;
+}
+
+.start-project-btn:hover, .package-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(72, 202, 228, 0.4) !important;
 }
 
 /* Glassy Header Styles */
 .glassy-header {
-  background: var(--header-glass);
-  backdrop-filter: blur(6px);
+  background: rgba(15, 76, 117, 0.25);
+  backdrop-filter: blur(12px);
   border-radius: var(--header-radius);
   margin: 1.5rem auto 2rem auto;
   max-width: 1700px;
-  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.15);
   padding: 0;
-  border: 1px solid var(--header-border);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.glassy-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-water);
+  opacity: 0.1;
+  z-index: -1;
 }
 .navbar-inner {
   display: flex;
@@ -115,17 +194,22 @@ body {
   position: relative;
   z-index: 10;
 }
+.glassy-header {
+  overflow: visible !important;
+}
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 9999;
-  background: #18191a;
+  background: rgba(15, 76, 117, 0.95);
+  backdrop-filter: blur(12px);
   border-radius: 14px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
   min-width: 200px;
   padding: 0.5rem 0;
   display: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
@@ -141,7 +225,39 @@ body {
   transition: background 0.2s;
 }
 .dropdown-menu a:hover {
-  background: #222;
+  background: rgba(72, 202, 228, 0.2);
+  color: var(--accent-green);
+}
+
+/* Mobile dropdown improvements */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    display: none;
+  }
+  
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--white);
+    border-left: 2px solid var(--accent-green);
+    margin-left: 1rem;
+  }
+  
+  .dropdown-menu a:hover {
+    background: transparent;
+    color: var(--accent-green);
+  }
 }
 
 .header-actions {
@@ -300,16 +416,18 @@ body {
 .hero-main {
   font-size: 6vw;
   font-weight: 700;
-  color: #222;
+  color: #ffffff;
   margin: 0 0 1.5rem 0;
   line-height: 1.05;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .hero-desc {
   font-size: 1.25rem;
-  color: #222;
+  color: #ffffff;
   max-width: 900px;
   margin: 0 auto 2.5rem auto;
   font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 .hero-awards {
   display: flex;
@@ -323,11 +441,12 @@ body {
   display: block;
 }
 .hero-caption {
-  color: #222;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 0;
-  opacity: 0.8;
+  opacity: 0.9;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 @media (max-width: 900px) {
   .hero-main {
@@ -346,12 +465,15 @@ body {
   }
   .hero-main {
     font-size: 2.1rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
   }
   .hero-top {
     font-size: 1.3rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
   }
   .hero-desc {
     font-size: 0.98rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   }
 }
 
@@ -1062,12 +1184,13 @@ body {
   align-items: center;
 }
 .expertise-title {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   font-family: 'Georgia', serif;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #023e8a;
+  margin-bottom: 2rem;
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .expertise-scroll-outer {
   width: 660px;
@@ -1125,7 +1248,7 @@ body {
     gap: 0.7rem;
   }
   .expertise-title {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 }
 

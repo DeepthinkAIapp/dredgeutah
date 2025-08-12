@@ -13,7 +13,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeepThink Studio</title>
+  <title>DredgeUtah - Professional Pond & Lake Dredging Services</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   
@@ -25,39 +25,57 @@
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#C6FF1A" />
   
-  <meta name="description" content="Deepthink Studio is a creative web design agency specializing in custom websites, e-commerce, and SEO optimization for businesses and brands." />
-  <meta name="keywords" content="web design, web development, e-commerce, SEO, branding, custom websites, digital agency, responsive design, Deepthink Studio" />
-  <meta name="author" content="Deepthink Studio" />
+  <meta name="description" content="DredgeUtah - Utah's #1 pond and lake dredging company. Professional sediment removal, aquatic weed control, and water restoration services. Serving Salt Lake City, Provo, Ogden, and all of Utah. Free quotes available." />
+  <meta name="keywords" content="pond dredging Utah, lake dredging Salt Lake City, sediment removal Provo, aquatic weed control Ogden, water restoration Utah, pond cleaning services, lake maintenance Utah, dredging company Utah, professional dredging services" />
+  <meta name="author" content="DredgeUtah" />
   <meta name="robots" content="index, follow" />
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Deepthink Studio | Creative Web Design Agency" />
-  <meta property="og:description" content="Creative web design agency specializing in custom websites, e-commerce, and SEO optimization for businesses and brands." />
+  <meta property="og:title" content="DredgeUtah - Utah's #1 Pond & Lake Dredging Company | Free Quotes" />
+  <meta property="og:description" content="Utah's leading pond and lake dredging company. Professional sediment removal, aquatic weed control, and water restoration. Serving Salt Lake City, Provo, Ogden. Free quotes available." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://deepthinkstudio.com/" />
-  <meta property="og:image" content="https://deepthinkstudio.com/images/Black%20and%20White%20Modern%20Corporate%20Business%20Consulting%20%26%20Sales%20LinkedIn%20Banner.png" />
+  <meta property="og:url" content="https://dredgeutah.com/" />
+  <meta property="og:image" content="https://dredgeutah.com/images/dredging-hero.jpg" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Deepthink Studio | Creative Web Design Agency" />
-  <meta name="twitter:description" content="Creative web design agency specializing in custom websites, e-commerce, and SEO optimization for businesses and brands." />
-  <meta name="twitter:image" content="https://deepthinkstudio.com/images/Black%20and%20White%20Modern%20Corporate%20Business%20Consulting%20%26%20Sales%20LinkedIn%20Banner.png" />
+  <meta name="twitter:title" content="DredgeUtah - Utah's #1 Pond & Lake Dredging Company | Free Quotes" />
+  <meta name="twitter:description" content="Utah's leading pond and lake dredging company. Professional sediment removal, aquatic weed control, and water restoration. Serving Salt Lake City, Provo, Ogden. Free quotes available." />
+  <meta name="twitter:image" content="https://dredgeutah.com/images/dredging-hero.jpg" />
 </head>
 <body>
   <div id="contact-modal" class="contact-modal" style="display:none;">
     <div class="contact-modal-content">
       <button class="contact-modal-close" aria-label="Close">&times;</button>
-      <h2>Get In Touch</h2>
+      <h2>Get Your Free Dredging Quote</h2>
       <form action="https://formspree.io/f/mjkognjj" method="POST" class="contact-form">
         <div class="contact-form-row">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email Address" required />
         </div>
-        <input type="text" name="phone" placeholder="Your Phone Number" />
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <div class="contact-form-newsletter">
-          <input type="checkbox" id="newsletter" name="newsletter" />
-          <label for="newsletter">To receive our weekly Newsletter/SMS and offers check here. You can unsubscribe at any time.</label>
-        </div>
-        <button type="submit" class="contact-form-submit">Submit</button>
+        <input type="text" name="phone" placeholder="Your Phone Number" required />
+        <input type="text" name="location" placeholder="Location (City, UT)" required />
+        <select name="service" required>
+          <option value="">Select a Service</option>
+          <option value="pond-dredging">Pond Dredging</option>
+          <option value="lake-dredging">Lake Dredging</option>
+          <option value="sediment-removal">Sediment Removal</option>
+          <option value="weed-control">Aquatic Weed Control</option>
+          <option value="water-restoration">Water Restoration</option>
+        </select>
+        <select name="project-size">
+          <option value="">Select Project Size</option>
+          <option value="small">Small (Under 1 acre)</option>
+          <option value="medium">Medium (1-5 acres)</option>
+          <option value="large">Large (5+ acres)</option>
+        </select>
+        <select name="urgency">
+          <option value="">Select Urgency</option>
+          <option value="immediate">Immediate</option>
+          <option value="within-week">Within a Week</option>
+          <option value="within-month">Within a Month</option>
+          <option value="flexible">Flexible</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your project, current conditions, and any specific concerns..." rows="4" required></textarea>
+        <button type="submit" class="contact-form-submit">Get Free Quote</button>
       </form>
     </div>
   </div>
@@ -66,9 +84,20 @@
       <div class="logo-group">
         <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
           <span class="logo-icon">
-            <img src="images/logo.png" alt="Deepthink Studio Logo" class="logo-flip" style="height: 52px; width: 52px; object-fit: contain;" />
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#48cae4;stop-opacity:1" />
+                  <stop offset="50%" style="stop-color:#90e0ef;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ade8f4;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <circle cx="26" cy="26" r="26" fill="url(#logoGradient)"/>
+              <path d="M15 20c0-3 2-5 5-5h12c3 0 5 2 5 5v12c0 3-2 5-5 5H20c-3 0-5-2-5-5V20z" fill="#023e8a"/>
+              <path d="M18 25h16M18 30h12" stroke="#48cae4" stroke-width="2" stroke-linecap="round"/>
+            </svg>
           </span>
-          <span class="logo-text">DEEPTHINK<br><span class="logo-sub">STUDIO</span></span>
+          <span class="logo-text">DREDGE<br><span class="logo-sub">UTAH</span></span>
         </a>
       </div>
       <nav class="nav-links">
@@ -76,31 +105,30 @@
         <div class="dropdown">
           <a href="#services" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
           <div class="dropdown-menu">
-            <a href="packages.html#logo-packages">Logo Design</a>
-            <a href="packages.html#website-packages">Website Design</a>
-            <a href="packages.html#ecommerce-packages">E-commerce</a>
-            <a href="packages.html#webportal-packages">Web Portal</a>
-            <a href="packages.html#mobile-packages">Mobile Application</a>
-            <a href="packages.html#digital-packages">Digital Marketing</a>
-            <a href="packages.html#seo-packages">SEO</a>
-            <a href="packages.html#animation-packages">Video Animation</a>
+            <a href="#pond-dredging">Pond Dredging</a>
+            <a href="#lake-dredging">Lake Dredging</a>
+            <a href="#sediment-removal">Sediment Removal</a>
+            <a href="#weed-control">Aquatic Weed Control</a>
+            <a href="#water-restoration">Water Restoration</a>
+            <a href="#maintenance">Maintenance Services</a>
           </div>
         </div>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="packages.html">Packages</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="blog/index.html" style="font-weight:700;color:#C6FF1A;">Blog</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:3853551138" style="font-weight:700;color:#C6FF1A;">Call Now</a>
       </nav>
       <div class="header-actions">
-        <button class="start-project-btn">Start Project</button>
+        <button class="start-project-btn">Get Free Quote</button>
         <button class="arrow-btn" aria-label="Next">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="16" cy="16" r="16" fill="#C6FF1A"/>
             <path d="M13 10l6 6-6 6" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <a href="mailto:info@deepthinkstudio.com" class="contact-btn" aria-label="Contact" style="display:inline-block;">
+        <a href="mailto:info@dredgeutah.com" class="contact-btn" aria-label="Contact" style="display:inline-block;">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="16" cy="16" r="16" fill="#222"/>
             <path d="M10 16c2.5 2.5 6.5 2.5 9 0" stroke="#C6FF1A" stroke-width="2" stroke-linecap="round"/>
@@ -111,7 +139,7 @@
     </div>
 </header>
 
-  <section class="hero" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+  <section id="home" class="hero" style="background: linear-gradient(135deg, #0f4c75 0%, #023e8a 25%, #03045e 50%, #48cae4 75%, #90e0ef 100%); position: relative; overflow: hidden;">
     <div id="hero-sunflower-bg">
       <!-- SVG line pattern overlay for hero background -->
       <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,13 +182,19 @@
       </svg>
     </div>
     <div class="hero-content">
-      <h2 class="hero-top" style="color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.45);">How we</h2>
-      <h1 class="hero-main">Develop<br>Websites</h1>
-      <p class="hero-desc">At Deepthink Studio, We craft custom websites fit to your needs, ensuring a seamless online presence that reflects your brand identity. Our team of experienced developers utilize cutting edge technologies to deliver responsive, user friendly, and visually appealing websites. Whether you need a simple landing page, an e-commerce platform, or a complex web application, we've got you covered.</p>
+      <h2 class="hero-top" style="color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.45);">Utah's #1 Professional</h2>
+      <h1 class="hero-main">Pond & Lake<br>Dredging Services</h1>
+      <p class="hero-desc">At DredgeUtah, we specialize in professional pond and lake dredging services throughout Utah including Salt Lake City, Provo, and Ogden. Our experienced team uses state-of-the-art equipment to remove sediment, control aquatic weeds, and restore water quality. Whether you need routine maintenance or emergency dredging, we deliver reliable, efficient solutions that protect your water resources and enhance your property value. Get your free quote today!</p>
     </div>
   </section>
 
-  <section class="help-section" style="background: linear-gradient(to top, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+  <section id="services" class="help-section" style="background: linear-gradient(135deg, #90e0ef 0%, #ade8f4 25%, #caf0f8 50%, #f0f9ff 75%, #ffffff 100%); position: relative; overflow: hidden;">
+    <div id="pond-dredging"></div>
+    <div id="lake-dredging"></div>
+    <div id="sediment-removal"></div>
+    <div id="weed-control"></div>
+    <div id="water-restoration"></div>
+    <div id="maintenance"></div>
     <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.18">
         <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
@@ -175,121 +209,121 @@
       </div>
       <div class="help-card help-card-green">
         <div class="help-icon"> 
-          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#222"/><path d="M24 12l8 8-8 8-8-8z" fill="#C6FF1A"/></svg>
+          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#023e8a"/><path d="M12 20h24M12 28h24M20 12v24M28 12v24" stroke="#48cae4" stroke-width="2"/></svg>
         </div>
-        <div class="help-title">1. Custom Design</div>
-        <div class="help-desc">We'll create a website that matches your brand and goals.</div>
+        <div class="help-title">1. Sediment Removal</div>
+        <div class="help-desc">Professional removal of accumulated sediment and debris from ponds and lakes.</div>
       </div>
       <div class="help-card">
         <div class="help-icon">
-          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#C6FF1A"/><path d="M16 24h16M24 16v16" stroke="#222" stroke-width="3"/></svg>
+          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#48cae4"/><path d="M16 24h16M24 16v16" stroke="#023e8a" stroke-width="3"/></svg>
         </div>
-        <div class="help-title">2. Technical Expertise</div>
-        <div class="help-desc">Our team will handle all the technical details so you can focus on your business.</div>
+        <div class="help-title">2. Aquatic Weed Control</div>
+        <div class="help-desc">Effective management and removal of invasive aquatic plants and weeds.</div>
       </div>
       <div class="help-card">
         <div class="help-icon">
-          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#C6FF1A"/><circle cx="24" cy="24" r="8" fill="#222"/></svg>
+          <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#48cae4"/><circle cx="24" cy="24" r="8" fill="#023e8a"/></svg>
         </div>
-        <div class="help-title">3. Continuous Support</div>
-        <div class="help-desc">From start to finish, we'll be there to support you and your website.</div>
+        <div class="help-title">3. Water Restoration</div>
+        <div class="help-desc">Complete water quality restoration and maintenance services for optimal results.</div>
       </div>
     </div>
   </section>
 
-  <section class="advantages-section" style="background: linear-gradient(to bottom, #18191a 0%, #fff 100%); position: relative; overflow: hidden;">
+  <section id="about" class="advantages-section" style="background: linear-gradient(135deg, #023e8a 0%, #03045e 25%, #0f4c75 50%, #48cae4 75%, #ffffff 100%); position: relative; overflow: hidden;">
     <div class="advantages-grid" style="position: relative; z-index: 1;">
       <div class="advantages-bubble">
-        <h2>Our advantages?</h2>
-        <p>With years of experience, we know how to build outstanding websites tailored to your needs. We take the time to understand your goals and deliver a site that fits you perfectly—on time and with exceptional quality. Our team is always available to support you, and our transparent pricing ensures you receive excellent value for your investment.</p>
+        <h2>Why Choose DredgeUtah?</h2>
+        <p>With years of experience in pond and lake management, we understand the unique challenges of water restoration projects. Our team combines technical expertise with environmental awareness to deliver sustainable dredging solutions. We use state-of-the-art equipment and proven techniques to ensure your project is completed efficiently, safely, and with minimal environmental impact.</p>
         <div class="advantages-img">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Web design example" />
+          <img src="images/IMG_0187.jpg" alt="Professional dredging equipment and services in Utah" />
         </div>
       </div>
       <div class="advantages-stats">
         <div class="stat-item">
-          <div class="stat-number">100+</div>
-          <div class="stat-desc"><em>Websites Expertly Crafted and Launched by Our Team</em></div>
+          <div class="stat-number">500+</div>
+          <div class="stat-desc"><em>Ponds and Lakes Successfully Dredged Throughout Utah</em></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">25+</div>
-          <div class="stat-desc"><em>Years of Specialization in Web Design and Development</em></div>
+          <div class="stat-number">15+</div>
+          <div class="stat-desc"><em>Years of Specialization in Pond and Lake Management</em></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">20+</div>
-          <div class="stat-desc"><em>Awards from leading Design Award Contests</em></div>
+          <div class="stat-number">50+</div>
+          <div class="stat-desc"><em>Acres of Water Restored and Maintained</em></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">800%</div>
-          <div class="stat-desc"><em>Surge of website traffic</em></div>
+          <div class="stat-number">24/7</div>
+          <div class="stat-desc"><em>Emergency Response Available for Critical Projects</em></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">99%</div>
-          <div class="stat-desc"><em>Unanimous Client Approval of Our Web Design Services.</em></div>
+          <div class="stat-number">100%</div>
+          <div class="stat-desc"><em>Client Satisfaction with Our Dredging Services</em></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="projects-include-section" style="background: #fff; position: relative; overflow: hidden;">
+  <section id="projects" class="projects-include-section" style="background: #fff; position: relative; overflow: hidden;">
     <div class="projects-include-grid" style="position: relative; z-index: 1;">
       <div class="projects-include-left">
-        <h2>All Our Projects Include:</h2>
-        <p>Every website development project at Deepthink Studio comes with a suite of features designed to ensure your online success.</p>
+        <h2>All Our Dredging Services Include:</h2>
+        <p>Every dredging project at DredgeUtah comes with comprehensive services designed to ensure optimal water quality and long-term results.</p>
       </div>
       <div class="projects-include-right">
         <div class="features-grid">
           <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#00464d">&lt;/&gt;</text></svg></span>
-            <span class="feature-title">Custom Design*</span>
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 12h16M8 20h16" stroke="#00464d" stroke-width="2"/></svg></span>
+            <span class="feature-title">Site Assessment & Planning</span>
           </div>
           <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><circle cx="16" cy="16" r="10" fill="#00464d"/></svg></span>
-            <span class="feature-title">Responsive Development</span>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 24L24 8" stroke="#00464d" stroke-width="3"/></svg></span>
-            <span class="feature-title">User-Friendly Interface</span>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><circle cx="16" cy="16" r="6" fill="#00464d"/></svg></span>
-            <span class="feature-title">SEO Optimization</span>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><rect x="8" y="8" width="16" height="16" fill="#00464d"/></svg></span>
-            <span class="feature-title">Performance Optimization</span>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><circle cx="16" cy="16" r="4" fill="#00464d"/></svg></span>
-            <span class="feature-title">Content Management System (CMS)</span>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 16h16" stroke="#00464d" stroke-width="3"/></svg></span>
-            <span class="feature-title">E-commerce Integration</span>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><rect x="10" y="10" width="12" height="12" fill="#00464d"/></svg></span>
-            <span class="feature-title">Security Features</span>
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><path d="M12 16h8M16 12v8" stroke="#00464d" stroke-width="2"/></svg></span>
+            <span class="feature-title">Professional Equipment</span>
           </div>
           <div class="feature-card">
             <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><circle cx="16" cy="16" r="6" fill="#00464d"/></svg></span>
-            <span class="feature-title">Analytics and Reporting</span>
+            <span class="feature-title">Sediment Removal</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><path d="M10 12h12M10 20h12" stroke="#00464d" stroke-width="2"/></svg></span>
+            <span class="feature-title">Aquatic Weed Control</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 16h16M16 8v16" stroke="#00464d" stroke-width="2"/></svg></span>
+            <span class="feature-title">Water Quality Testing</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><path d="M12 12h8v8h-8z" fill="#00464d"/></svg></span>
+            <span class="feature-title">Environmental Compliance</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 12h16M8 20h16" stroke="#00464d" stroke-width="2"/></svg></span>
+            <span class="feature-title">Debris Disposal</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><circle cx="16" cy="16" r="16" fill="#C6FF1A"/><path d="M12 12h8v8h-8z" fill="#00464d"/></svg></span>
+            <span class="feature-title">Site Restoration</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#C6FF1A"/><path d="M8 16h16M16 8v16" stroke="#00464d" stroke-width="2"/></svg></span>
+            <span class="feature-title">Follow-up Maintenance</span>
           </div>
         </div>
         <div class="additional-services">
           <div class="additional-title">Additional services:</div>
           <div class="additional-grid">
             <div class="additional-card">
-              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#C6FF1A">&#128722;</text></svg></span>
-              <span class="feature-title">E-commerce integration</span>
+              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><path d="M8 12h16M8 20h16" stroke="#C6FF1A" stroke-width="2"/></svg></span>
+              <span class="feature-title">Emergency Response</span>
             </div>
             <div class="additional-card">
-              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#C6FF1A">&#128172;</text></svg></span>
-              <span class="feature-title">Multilingual support</span>
+              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><path d="M12 12h8v8h-8z" fill="#C6FF1A"/></svg></span>
+              <span class="feature-title">Consultation Services</span>
             </div>
             <div class="additional-card">
-              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><text x="16" y="22" text-anchor="middle" font-size="18" font-family="Arial" fill="#C6FF1A">&#127760;</text></svg></span>
-              <span class="feature-title">Hosting &amp; Domain</span>
+              <span class="feature-icon"><svg width="32" height="32"><rect width="32" height="32" rx="8" fill="#00464d"/><path d="M8 16h16M16 8v16" stroke="#C6FF1A" stroke-width="2"/></svg></span>
+              <span class="feature-title">Preventive Maintenance</span>
             </div>
           </div>
         </div>
@@ -299,63 +333,7 @@
 
   
 
-  <section id="portfolio" class="portfolio-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
-    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g opacity="0.18">
-        <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
-        <ellipse cx="960" cy="540" rx="700" ry="300" stroke="#222" stroke-width="2"/>
-        <ellipse cx="960" cy="540" rx="500" ry="200" stroke="#222" stroke-width="2"/>
-        <ellipse cx="960" cy="540" rx="300" ry="100" stroke="#222" stroke-width="2"/>
-      </g>
-    </svg>
-    <div class="portfolio-container" style="position: relative; z-index: 1;">
-      <h2 class="portfolio-title">Take a look at our impressive portfolio of<br>projects we’ve created up until now !</h2>
-      <div class="portfolio-subtitle">Showcasing our expertise in creating unique and impactful designs matched exclusively to each client’s vision and brand identity.</div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-            <a href="https://vastconceptsna.com/" target="_blank">
-                <img src="images/99999.png" alt="Project 1" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://deepthinkstudio.com/packages.html#website-packages" target="_blank">
-                <img src="images/2.jpg" alt="Project 2" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://www.sportsamericaevents.com" target="_blank">
-                <img src="images/sportsam.png" alt="Project 3" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://deepthinkstudio.com/packages.html#website-packages" target="_blank">
-                <img src="images/4 (1).jpg" alt="Project 4" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://sportsamevents.com/blog" target="_blank">
-                <img src="images/888.png" alt="Project 5" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://www.utahprostatecancerrun.com/" target="_blank">
-                <img src="images/9999.png" alt="Project 6" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://www.coldturkeyrun.com/" target="_blank">
-                <img src="images/Screenshot 2025-07-22 170303.png" alt="Project 7" />
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://deepthinkstudio.com/packages.html#website-packages" target="_blank">
-                <img src="images/6 (1).jpg" alt="Project 8" />
-            </a>
-        </div>
-    </div>
-  </section>
-
-  <section class="expertise-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+  <section id="equipment" class="expertise-section" style="background: linear-gradient(135deg, #48cae4 0%, #90e0ef 25%, #ade8f4 50%, #caf0f8 75%, #f0f9ff 100%); position: relative; overflow: hidden;">
     <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.18">
         <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
@@ -365,63 +343,146 @@
       </g>
     </svg>
     <div class="expertise-container" style="position: relative; z-index: 1;">
-      <div class="expertise-title">We are experts in</div>
+      <div class="expertise-title">Our Dredging Services</div>
       <div class="expertise-scroll-outer">
         <div class="expertise-scroll-inner">
           <div class="expertise-logos">
-            <span class="expertise-logo" title="PHP">
-              <img src="images/php.png" alt="PHP" width="60" height="60" />
+            <span class="expertise-logo" title="Pond Dredging">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #48cae4, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(72, 202, 228, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M8 12h24M8 20h24M8 28h24M16 8v24M24 8v24" stroke="#023e8a" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="JavaScript">
-              <img src="images/js.png" alt="JavaScript" width="60" height="60" />
+            <span class="expertise-logo" title="Lake Dredging">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #48cae4, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(72, 202, 228, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 12h16v16h-16z" fill="#023e8a"/>
+                  <path d="M16 16h8v8h-8z" fill="#90e0ef"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Web">
-              <img src="images/web.png" alt="Web" width="60" height="60" />
+            <span class="expertise-logo" title="Sediment Removal">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="10" fill="#023e8a"/>
+                  <circle cx="20" cy="20" r="5" fill="#C6FF1A"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Mailchimp">
-              <img src="images/mailchimp.png" alt="Mailchimp" width="60" height="60" />
+            <span class="expertise-logo" title="Aquatic Weed Control">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 28l8-16 8 16" stroke="#023e8a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Shopify">
-              <img src="images/shopify.png" alt="Shopify" width="60" height="60" />
+            <span class="expertise-logo" title="Water Restoration">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M10 20c0-5 5-10 10-10s10 5 10 10" stroke="#023e8a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="React">
-              <img src="images/library.png" alt="React" width="60" height="60" />
+            <span class="expertise-logo" title="Environmental Compliance">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 18l6 6 10-10" stroke="#023e8a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Wix">
-              <img src="images/wix.png" alt="Wix" width="60" height="60" />
+            <span class="expertise-logo" title="Emergency Response">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 10l3 9h-6l3-9z" fill="#023e8a"/>
+                  <rect x="18" y="19" width="4" height="11" fill="#023e8a"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="WordPress">
-              <img src="images/wordpress.png" alt="WordPress" width="60" height="60" />
+            <span class="expertise-logo" title="Maintenance Services">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 12h16v16h-16z" stroke="#023e8a" stroke-width="2" fill="none"/>
+                  <path d="M16 16h8v8h-8z" fill="#023e8a"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Support">
-              <img src="images/support.png" alt="Support" width="60" height="60" />
+            <span class="expertise-logo" title="Professional Equipment">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M10 20h20M20 10v20" stroke="#023e8a" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
           </div>
           <!-- duplicate for seamless scroll -->
           <div class="expertise-logos">
-            <span class="expertise-logo" title="JavaScript">
-              <img src="images/js.png" alt="JavaScript" width="60" height="60" />
+            <span class="expertise-logo" title="Pond Dredging">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #48cae4, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(72, 202, 228, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M8 12h24M8 20h24M8 28h24M16 8v24M24 8v24" stroke="#023e8a" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Web">
-              <img src="images/web.png" alt="Web" width="60" height="60" />
+            <span class="expertise-logo" title="Lake Dredging">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #48cae4, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(72, 202, 228, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 12h16v16h-16z" fill="#023e8a"/>
+                  <path d="M16 16h8v8h-8z" fill="#90e0ef"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Mailchimp">
-              <img src="images/mailchimp.png" alt="Mailchimp" width="60" height="60" />
+            <span class="expertise-logo" title="Sediment Removal">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="10" fill="#023e8a"/>
+                  <circle cx="20" cy="20" r="5" fill="#C6FF1A"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Shopify">
-              <img src="images/shopify.png" alt="Shopify" width="60" height="60" />
+            <span class="expertise-logo" title="Aquatic Weed Control">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 28l8-16 8 16" stroke="#023e8a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="React">
-              <img src="images/library.png" alt="React" width="60" height="60" />
+            <span class="expertise-logo" title="Water Restoration">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M10 20c0-5 5-10 10-10s10 5 10 10" stroke="#023e8a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Wix">
-              <img src="images/wix.png" alt="Wix" width="60" height="60" />
+            <span class="expertise-logo" title="Environmental Compliance">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 18l6 6 10-10" stroke="#023e8a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="WordPress">
-              <img src="images/wordpress.png" alt="WordPress" width="60" height="60" />
+            <span class="expertise-logo" title="Emergency Response">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 10l3 9h-6l3-9z" fill="#023e8a"/>
+                  <rect x="18" y="19" width="4" height="11" fill="#023e8a"/>
+                </svg>
+              </div>
             </span>
-            <span class="expertise-logo" title="Support">
-              <img src="images/support.png" alt="Support" width="60" height="60" />
+            <span class="expertise-logo" title="Maintenance Services">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M12 12h16v16h-16z" stroke="#023e8a" stroke-width="2" fill="none"/>
+                  <path d="M16 16h8v8h-8z" fill="#023e8a"/>
+                </svg>
+              </div>
+            </span>
+            <span class="expertise-logo" title="Professional Equipment">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #C6FF1A, #90e0ef); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(198, 255, 26, 0.3);">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M10 20h20M20 10v20" stroke="#023e8a" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
             </span>
           </div>
         </div>
@@ -429,7 +490,7 @@
     </div>
   </section>
 
-  <section class="packages-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+  <section class="packages-section" style="background: linear-gradient(135deg, #0f4c75 0%, #023e8a 25%, #03045e 50%, #48cae4 75%, #90e0ef 100%); position: relative; overflow: hidden;">
     <svg style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.18">
         <ellipse cx="960" cy="540" rx="900" ry="400" stroke="#222" stroke-width="2"/>
@@ -439,133 +500,141 @@
       </g>
     </svg>
     <div class="packages-header" style="position: relative; z-index: 1;">
-      <h2>Choose<br>your package</h2>
-      <div class="packages-subtitle">Our plans are clear and open, no shocks or caps. Help is always here when you want it.</div>
+      <h2>Choose<br>your service</h2>
+      <div class="packages-subtitle">Our dredging services are comprehensive and transparent. We provide detailed quotes and professional solutions for all your water restoration needs.</div>
     </div>
     <div class="packages-grid">
       <!-- Row 1 -->
       <div class="package-card">
-        <div class="package-title">Startup</div>
-        <div class="package-sub">Launch with impact: Essential web solution</div>
-        <div class="package-price">$ <span>245</span></div>
+        <div class="package-title">Residential</div>
+        <div class="package-sub">Essential dredging for residential ponds</div>
+        <div class="package-price">$ <span>2,500</span></div>
         <div class="package-features package-features-green">
           <ul>
-            <li>3 Page Website</li>
-            <li>Custom Layout Design</li>
-            <li>Contact/Query Form</li>
-            <li>3 Banner Designs</li>
-            <li>5 Stock Photos</li>
-            <li>FREE Favicon Design</li>
-            <li>FREE Google Friendly Sitemap</li>
-            <li>Unlimited Revisions</li>
-            <li>Complete W3C Certified HTML</li>
+            <li>Site Assessment & Planning</li>
+            <li>Sediment Removal (Up to 2ft depth)</li>
+            <li>Aquatic Weed Control</li>
+            <li>Water Quality Testing</li>
+            <li>Debris Disposal</li>
+            <li>Site Restoration</li>
+            <li>Environmental Compliance</li>
+            <li>1 Year Maintenance Plan</li>
+            <li>Emergency Response Available</li>
           </ul>
         </div>
-        <button class="package-btn">Start Project <span>&#8594;</span></button>
+        <button class="package-btn">Get Quote <span>&#8594;</span></button>
       </div>
       <div class="package-card">
-        <div class="package-title">Professional</div>
-        <div class="package-sub">Growth-focused web solutions for expanding businesses</div>
-        <div class="package-price">$ <span>695</span></div>
+        <div class="package-title">Commercial</div>
+        <div class="package-sub">Comprehensive dredging for commercial properties</div>
+        <div class="package-price">$ <span>8,500</span></div>
         <div class="package-features package-features-teal">
           <ul>
-            <li>Up to 5 Unique Pages Website</li>
-            <li>CMS /Admin Panel Integration</li>
-            <li>5+ Stock Photos & Banner Designs</li>
-            <li>FREE Social Media Integration</li>
-            <li>FREE Favicon Design</li>
-            <li>FREE Google Friendly Sitemap</li>
-            <li>Unlimited Revisions</li>
-            <li>Cross Browser Compatible</li>
-            <li>Complete W3C Certified HTML</li>
+            <li>Comprehensive Site Assessment</li>
+            <li>Advanced Sediment Removal (Up to 5ft depth)</li>
+            <li>Professional Weed Management</li>
+            <li>Water Quality Analysis & Treatment</li>
+            <li>Large-scale Debris Disposal</li>
+            <li>Complete Site Restoration</li>
+            <li>Environmental Impact Assessment</li>
+            <li>2 Year Maintenance Plan</li>
+            <li>Priority Emergency Response</li>
           </ul>
         </div>
-        <button class="package-btn">Start Project <span>&#8594;</span></button>
+        <button class="package-btn">Get Quote <span>&#8594;</span></button>
       </div>
       <div class="package-card">
-        <div class="package-title">Elite</div>
-        <div class="package-sub">Launch with impact: Essential web solution</div>
-        <div class="package-price">$ <span>995</span></div>
+        <div class="package-title">Industrial</div>
+        <div class="package-sub">Large-scale dredging for industrial applications</div>
+        <div class="package-price">$ <span>15,000</span></div>
         <div class="package-features package-features-blue">
           <ul>
-            <li>Up to 10 Unique Pages Website</li>
-            <li>Custom Made, Interactive & Dynamic Design</li>
-            <li>Customized WordPress or PHP Development</li>
-            <li>Interactive Sliding Banners</li>
-            <li>Up to 10 Custom Made Banner Designs</li>
-            <li>10 Stock Images</li>
-            <li>Unlimited Revisions</li>
+            <li>Full Engineering Assessment</li>
+            <li>Deep Sediment Removal (Up to 10ft depth)</li>
+            <li>Advanced Weed & Algae Control</li>
+            <li>Comprehensive Water Treatment</li>
+            <li>Industrial Debris Management</li>
+            <li>Complete Ecosystem Restoration</li>
+            <li>Full Environmental Compliance</li>
+            <li>3 Year Maintenance Plan</li>
+            <li>24/7 Emergency Response</li>
           </ul>
         </div>
-        <button class="package-btn">Start Project <span>&#8594;</span></button>
+        <button class="package-btn">Get Quote <span>&#8594;</span></button>
       </div>
       <!-- Row 2 -->
       <div class="package-card">
-        <div class="package-title">Silver</div>
-        <div class="package-sub">Launch with impact: Essential web solution</div>
-        <div class="package-price">$ <span>1595</span></div>
+        <div class="package-title">Emergency</div>
+        <div class="package-sub">Rapid response for critical situations</div>
+        <div class="package-price">$ <span>5,000</span></div>
         <div class="package-features package-features-gold">
           <ul>
-            <li>Up to 15 Unique Pages Website</li>
-            <li>Custom Made, Interactive, Dynamic & High-End Design</li>
-            <li>Customized WordPress or PHP Development</li>
-            <li>Fully Mobile Responsive</li>
-            <li>Interactive Sliding Banners</li>
-            <li>Up to 15 Custom Made Banner Designs</li>
-            <li>15 Stock Images</li>
+            <li>24/7 Emergency Response</li>
+            <li>Immediate Site Assessment</li>
+            <li>Rapid Sediment Removal</li>
+            <li>Emergency Weed Control</li>
+            <li>Quick Water Quality Restoration</li>
+            <li>Minimal Disruption Operations</li>
+            <li>Same Day Service Available</li>
+            <li>Priority Scheduling</li>
+            <li>Follow-up Maintenance</li>
           </ul>
         </div>
-        <button class="package-btn">Start Project <span>&#8594;</span></button>
+        <button class="package-btn">Call Now <span>&#8594;</span></button>
       </div>
       <div class="package-card">
-        <div class="package-title">Business</div>
-        <div class="package-sub">Launch with impact: Essential web solution</div>
-        <div class="package-price">$ <span>2495</span></div>
+        <div class="package-title">Maintenance</div>
+        <div class="package-sub">Ongoing care and prevention services</div>
+        <div class="package-price">$ <span>1,200</span></div>
         <div class="package-features package-features-orange">
           <ul>
-            <li>25 Pages Website</li>
-            <li>Custom Made, Interactive, Dynamic & High-End Design</li>
-            <li>Customized WordPress or PHP Development</li>
-            <li>Fully Mobile Responsive</li>
-            <li>Interactive Sliding Banners</li>
-            <li>Up to 15 Custom Made Banner Designs</li>
-            <li>15 Stock Images</li>
+            <li>Regular Site Inspections</li>
+            <li>Preventive Weed Control</li>
+            <li>Water Quality Monitoring</li>
+            <li>Minor Sediment Removal</li>
+            <li>Seasonal Maintenance</li>
+            <li>Equipment Calibration</li>
+            <li>Environmental Monitoring</li>
+            <li>Annual Reports</li>
+            <li>Priority Scheduling</li>
           </ul>
         </div>
-        <button class="package-btn">Start Project <span>&#8594;</span></button>
+        <button class="package-btn">Get Quote <span>&#8594;</span></button>
       </div>
       <div class="package-card">
-        <div class="package-title">Platinum</div>
-        <div class="package-sub">Launch with impact: Essential web solution</div>
-        <div class="package-price">$ <span>4495</span></div>
+        <div class="package-title">Custom</div>
+        <div class="package-sub">Tailored solutions for unique requirements</div>
+        <div class="package-price">$ <span>Custom</span></div>
         <div class="package-features package-features-red">
           <ul>
-            <li>Unlimited Pages Website</li>
-            <li>Custom Made, Interactive, Dynamic & High-End Design</li>
-            <li>Customized WordPress or PHP Development</li>
-            <li>Fully Mobile Responsive</li>
-            <li>Interactive Sliding Banners</li>
-            <li>Up to 15 Custom Made Banner Designs</li>
-            <li>15 Stock Images</li>
+            <li>Custom Project Assessment</li>
+            <li>Tailored Dredging Solutions</li>
+            <li>Specialized Equipment</li>
+            <li>Custom Water Treatment</li>
+            <li>Project Management</li>
+            <li>Environmental Consulting</li>
+            <li>Regulatory Compliance</li>
+            <li>Long-term Planning</li>
+            <li>Dedicated Project Team</li>
           </ul>
         </div>
-        <button class="package-btn">Start Project <span>&#8594;</span></button>
+        <button class="package-btn">Contact Us <span>&#8594;</span></button>
       </div>
     </div>
   </section>
 
-  <section class="cta-headstart-section" style="background: #18191a; position: relative; overflow: hidden;">
-    <div class="cta-headstart-revamp" style="max-width: 900px; margin: 3rem auto; background: #C6FF1A; border-radius: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); overflow: hidden; display: flex; flex-direction: row; align-items: stretch;">
-      <div class="cta-headstart-imgwrap" style="flex: 0 0 220px; display: flex; align-items: center; justify-content: center; background: #e9f97a;">
-        <img src="images/jump.png" alt="Get a Headstart" style="width: 120px; height: auto; display: block; margin: 2rem auto; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); background: #C6FF1A;" />
+  <section id="contact" class="cta-headstart-section" style="background: var(--gradient-primary); position: relative; overflow: hidden;">
+          <div class="cta-headstart-revamp" style="max-width: 900px; margin: 3rem auto; background: var(--gradient-water); border-radius: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); overflow: hidden; display: flex; flex-direction: row; align-items: stretch;">
+        <div class="cta-headstart-imgwrap" style="flex: 0 0 220px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2);">
+                  <img src="images/jump.png" alt="Get a Headstart" style="width: 120px; height: auto; display: block; margin: 2rem auto; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); background: var(--accent-blue);" />
       </div>
       <div class="cta-headstart-main" style="flex: 1; padding: 2.5rem 2rem; display: flex; flex-direction: column; justify-content: center;">
-        <h2 style="font-size: 2rem; font-family: 'Georgia', serif; font-weight: 700; color: #18191a; margin-bottom: 1rem;">Get a Headstart!</h2>
+        <h2 style="font-size: 2rem; font-family: 'Georgia', serif; font-weight: 700; color: #023e8a; margin-bottom: 1rem;">Transform Your Water Today!</h2>
         <p style="font-size: 1.1rem; color: #222; margin-bottom: 2rem;">Ready to elevate your online presence? Contact Deepthink Studio today to start building a custom website that drives results. Let’s create something amazing together!</p>
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
-          <a href="contact.html" class="cta-headstart-chat" style="background: #18191a; color: #fff; font-weight: 700; border: none; border-radius: 30px; padding: 0.9rem 2.2rem; font-size: 1.1rem; cursor: pointer; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">Live chat</a>
-          <a href="tel:3853551138" class="cta-headstart-call" style="display: flex; align-items: center; gap: 0.5rem; color: #18191a; font-weight: 700; text-decoration: none; font-size: 1.1rem;">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="11" fill="#18191a"/><path d="M7 9c.5 2 2.5 4 4.5 4.5l1.5-1.5c.2-.2.5-.2.7 0l2 1.2c.2.1.3.4.2.6-.4 1.1-1.5 2-2.7 2C9.5 16 6 12.5 6 8.5c0-1.2.9-2.3 2-2.7.2-.1.5 0 .6.2l1.2 2c.1.2.1.5 0 .7L7 9z" fill="#C6FF1A"/></svg>
+          <a href="#contact" class="cta-headstart-chat" style="background: #023e8a; color: #fff; font-weight: 700; border: none; border-radius: 30px; padding: 0.9rem 2.2rem; font-size: 1.1rem; cursor: pointer; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">Get Free Quote</a>
+                      <a href="tel:3853551138" class="cta-headstart-call" style="display: flex; align-items: center; gap: 0.5rem; color: #023e8a; font-weight: 700; text-decoration: none; font-size: 1.1rem;">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="11" fill="#023e8a"/><path d="M7 9c.5 2 2.5 4 4.5 4.5l1.5-1.5c.2-.2.5-.2.7 0l2 1.2c.2.1.3.4.2.6-.4 1.1-1.5 2-2.7 2C9.5 16 6 12.5 6 8.5c0-1.2.9-2.3 2-2.7.2-.1.5 0 .6.2l1.2 2c.1.2.1.5 0 .7L7 9z" fill="#48cae4"/></svg>
             <span>(385) 355-1138</span>
           </a>
         </div>
@@ -622,7 +691,7 @@
     </style>
   </section>
 
-  <section class="quote-section" style="background: linear-gradient(to bottom, #18191a 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+  <section class="quote-section" style="background: linear-gradient(135deg, #0f4c75 0%, #023e8a 25%, #03045e 50%, #48cae4 75%, #90e0ef 100%); position: relative; overflow: hidden;">
     <style>
       @media (max-width: 700px) {
         .quote-section {
@@ -674,13 +743,13 @@
     <div class="quote-bg" style="position: relative; z-index: 1;">
       <div class="quote-inner">
         <div class="quote-believe">We believe that</div>
-        <div class="quote-text">Great design is clear and simple, making ideas easy to understand at a glance.</div>
+        <div class="quote-text">Clean water is essential for healthy ecosystems and beautiful properties.</div>
       </div>
     </div>
     <div class="quote-cta">
       <div class="quote-cta-inner">
-        <div class="quote-cta-title">Got a project to discuss?</div>
-        <button class="quote-cta-btn">Start Project <span>&#8594;</span></button>
+        <div class="quote-cta-title">Need dredging services?</div>
+        <button class="quote-cta-btn">Get Free Quote <span>&#8594;</span></button>
       </div>
     </div>
   </section>
@@ -689,22 +758,32 @@
     <div class="footer-main">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="images/logo.png" alt="Deepthink Studio Logo" class="logo-flip" style="height: 60px; width: 80px; object-fit: contain;" />
-          <span class="footer-logo-text"><span>DEEPTHINK</span><br><span class="footer-logo-sub">STUDIO</span></span>
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#48cae4;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#90e0ef;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#ade8f4;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="30" cy="30" r="30" fill="url(#footerLogoGradient)"/>
+            <path d="M15 25h30M15 35h30M25 15v30M35 15v30" stroke="#023e8a" stroke-width="2"/>
+          </svg>
+          <span class="footer-logo-text"><span>DREDGE</span><br><span class="footer-logo-sub">UTAH</span></span>
         </div>
         <div class="footer-desc">
-Deepthink Studio was founded on the principle that a strong digital presence can elevate brands worldwide. We empower businesses to grow and thrive online through innovative web design and strategic digital solutions.
+DredgeUtah was founded on the principle that clean, healthy water is essential for thriving communities. We empower property owners to maintain and restore their water resources through professional dredging services and environmental stewardship.
 </div>
       </div>
       <div class="footer-col footer-links">
         <div class="footer-links-title">Quick Links</div>
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="/packages.html">Packages</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#equipment">Equipment</a></li>
           <li><a href="/privacypolicy.html">Privacy Policy</a></li>
           <li><a href="/termsofuse.html">Terms of Use</a></li>
           <li><a href="/refundpolicy.html">Refund Policy</a></li>
@@ -713,33 +792,59 @@ Deepthink Studio was founded on the principle that a strong digital presence can
       <div class="footer-col footer-services">
         <div class="footer-links-title">Our Services</div>
         <ul>
-          <li><a href="packages.html#logo-packages">Logo Design</a></li>
-          <li><a href="packages.html#website-packages">Website Design</a></li>
-          <li><a href="packages.html#ecommerce-packages">E-commerce</a></li>
-          <li><a href="packages.html#webportal-packages">Web Portal</a></li>
-          <li><a href="packages.html#mobile-packages">Mobile Application</a></li>
-          <li><a href="packages.html#digital-packages">Digital Marketing</a></li>
-          <li><a href="packages.html#seo-packages">SEO</a></li>
-          <li><a href="packages.html#animation-packages">Video Animation</a></li>
+          <li><a href="#pond-dredging">Pond Dredging</a></li>
+          <li><a href="#lake-dredging">Lake Dredging</a></li>
+          <li><a href="#sediment-removal">Sediment Removal</a></li>
+          <li><a href="#weed-control">Aquatic Weed Control</a></li>
+          <li><a href="#water-restoration">Water Restoration</a></li>
+          <li><a href="#maintenance">Maintenance Services</a></li>
+          <li><a href="#emergency">Emergency Response</a></li>
+          <li><a href="#consultation">Consultation Services</a></li>
         </ul>
       </div>
       <div class="footer-col footer-contact">
         <div class="footer-links-title">Contact Us</div>
         <div class="footer-contact-list">
           <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">&#9742;</text></svg> (385) 355-1138</div>
-          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">@</text></svg> <a href="mailto:info@deepthinkstudio.com" style="color:inherit;text-decoration:none;">info@deepthinkstudio.com</a></div>
-          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">&#8962;</text></svg> 620 S 7th St PMB 1943, Las Vegas, Nevada 89101, United States</div>
+          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">@</text></svg> <a href="mailto:info@dredgeutah.com" style="color:inherit;text-decoration:none;">info@dredgeutah.com</a></div>
+          <div><svg width="16" height="16" fill="#222"><circle cx="8" cy="8" r="8" fill="#fff"/><text x="8" y="13" text-anchor="middle" font-size="10" font-family="Arial" fill="#222">&#8962;</text></svg> Serving all of Utah - Salt Lake City, Provo, Ogden, and surrounding areas</div>
         </div>
       </div>
     </div>
     <div class="footer-divider"></div>
     <div class="footer-bottom">
-      <div class="footer-copyright">© 2025 Deepthink Studio | All rights reserved.</div>
-      <div class="footer-legal">All content, including logos, images, designs, and text, is the intellectual property of Deepthink Studio unless otherwise stated. Any third-party trademarks, logos, or brand names displayed on this website are the property of their respective owners and are used strictly for illustrative purposes. Portfolio examples and case studies shown on this website are based on real work completed by our team; however, some names, visuals, or details may be modified to honor client confidentiality agreements under our Non-Disclosure Agreements (NDAs). These samples are intended to demonstrate the quality and style of our work, and do not claim affiliation or endorsement unless explicitly stated.</div>
-      <div class="footer-dba">Deepthink Studio is DBA of <b>DEEPTHINK ENTERPRISES LLC</b></div>
+      <div class="footer-copyright">© 2025 DredgeUtah | All rights reserved.</div>
+      <div class="footer-legal">All content, including logos, images, designs, and text, is the intellectual property of DredgeUtah unless otherwise stated. Any third-party trademarks, logos, or brand names displayed on this website are the property of their respective owners and are used strictly for illustrative purposes. Project examples and case studies shown on this website are based on real work completed by our team; however, some names, visuals, or details may be modified to honor client confidentiality agreements under our Non-Disclosure Agreements (NDAs). These samples are intended to demonstrate the quality and style of our work, and do not claim affiliation or endorsement unless explicitly stated.</div>
+      <div class="footer-dba">DredgeUtah is DBA of <b>DREDGE UTAH LLC</b></div>
     </div>
   </footer>
   <script src="script.js"></script>
+  
+  <script>
+    // Add click handlers for quote buttons
+    document.addEventListener('DOMContentLoaded', function() {
+      const quoteButtons = document.querySelectorAll('.package-btn, .quote-cta-btn, .start-project-btn');
+      const contactModal = document.getElementById('contact-modal');
+      const closeButton = document.querySelector('.contact-modal-close');
+      
+      quoteButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          contactModal.style.display = 'flex';
+        });
+      });
+      
+      closeButton.addEventListener('click', function() {
+        contactModal.style.display = 'none';
+      });
+      
+      contactModal.addEventListener('click', function(e) {
+        if (e.target === contactModal) {
+          contactModal.style.display = 'none';
+        }
+      });
+    });
+  </script>
   
   <canvas id="tracer-canvas" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9999;"></canvas>
 </body>

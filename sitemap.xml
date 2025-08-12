@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://deepthinkstudio.com/</loc>
+    <loc>https://dredgeutah.com/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://deepthinkstudio.com/about.html</loc>
+    <loc>https://dredgeutah.com/blog/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://deepthinkstudio.com/packages.html</loc>
+    <loc>https://dredgeutah.com/complete-guide-to-pond-dredging-2025.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deepthinkstudio.com/portfolio.html</loc>
+    <loc>https://dredgeutah.com/privacypolicy.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://deepthinkstudio.com/contact.html</loc>
+    <loc>https://dredgeutah.com/termsofuse.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://deepthinkstudio.com/privacypolicy.html</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/termsofuse.html</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/refundpolicy.html</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/blog/</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/how-to-write-a-web-design-proposal-that-wins-clients-every-time-2025-guide-2025.html</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/how-to-handle-difficult-clients-as-a-freelance-web-designer-2025.html</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/how-to-start-freelance-web-design-2025.html</loc>
-  </url>
-  <url>
-    <loc>https://deepthinkstudio.com/best-free-ui-design-tools-2025.html</loc>
+    <loc>https://dredgeutah.com/refundpolicy.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

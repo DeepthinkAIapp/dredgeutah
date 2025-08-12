@@ -10,6 +10,39 @@ if (hamburger && navLinks && quoteBtn) {
   });
 }
 
+// Dropdown menu functionality for touch devices
+const dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(dropdown => {
+  const toggle = dropdown.querySelector('.dropdown-toggle');
+  const menu = dropdown.querySelector('.dropdown-menu');
+  
+  if (toggle && menu) {
+    // Handle click events for touch devices
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Close other dropdowns
+      dropdowns.forEach(other => {
+        if (other !== dropdown) {
+          other.querySelector('.dropdown-menu').style.display = 'none';
+        }
+      });
+      
+      // Toggle current dropdown
+      const isVisible = menu.style.display === 'block';
+      menu.style.display = isVisible ? 'none' : 'block';
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  }
+});
+
 // Smooth scroll for navigation links
 const navLinkElements = document.querySelectorAll('.nav-links a, .footer-section.quick-links a');
 navLinkElements.forEach(link => {
